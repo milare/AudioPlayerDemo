@@ -22,6 +22,11 @@
 		387A53FE13612D7000906A79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 387A53FC13612D7000906A79 /* InfoPlist.strings */; };
 		387A540113612D7000906A79 /* AudioPlayerDemoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 387A540013612D7000906A79 /* AudioPlayerDemoTests.h */; };
 		387A540313612D7000906A79 /* AudioPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A540213612D7000906A79 /* AudioPlayerDemoTests.m */; };
+		387A541713612DB400906A79 /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A541613612DB400906A79 /* AudioPlayer.m */; };
+		387A54191361316200906A79 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387A54181361316200906A79 /* AVFoundation.framework */; };
+		387A541C1361367A00906A79 /* SoundBar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 387A541A1361367A00906A79 /* SoundBar.wav */; };
+		387A541D1361367A00906A79 /* SoundFoo.wav in Resources */ = {isa = PBXBuildFile; fileRef = 387A541B1361367A00906A79 /* SoundFoo.wav */; };
+		387A541F1361368D00906A79 /* MusicBack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 387A541E1361368D00906A79 /* MusicBack.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +44,28 @@
 		387A53D313612D6F00906A79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		387A53D513612D6F00906A79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		387A53D713612D6F00906A79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		387A53DB13612D6F00906A79 /* AudioPlayerDemo-Info.plist */ = {isa = PBXFileReference; path = "AudioPlayerDemo-Info.plist"; sourceTree = "<group>"; };
+		387A53DB13612D6F00906A79 /* AudioPlayerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioPlayerDemo-Info.plist"; sourceTree = "<group>"; };
 		387A53DD13612D6F00906A79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		387A53DF13612D6F00906A79 /* AudioPlayerDemo-Prefix.pch */ = {isa = PBXFileReference; path = "AudioPlayerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		387A53DF13612D6F00906A79 /* AudioPlayerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioPlayerDemo-Prefix.pch"; sourceTree = "<group>"; };
 		387A53E013612D6F00906A79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		387A53E213612D6F00906A79 /* AudioPlayerDemoAppDelegate.h */ = {isa = PBXFileReference; path = AudioPlayerDemoAppDelegate.h; sourceTree = "<group>"; };
+		387A53E213612D6F00906A79 /* AudioPlayerDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioPlayerDemoAppDelegate.h; sourceTree = "<group>"; };
 		387A53E313612D6F00906A79 /* AudioPlayerDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerDemoAppDelegate.m; sourceTree = "<group>"; };
 		387A53E613612D6F00906A79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		387A53E813612D6F00906A79 /* AudioPlayerDemoViewController.h */ = {isa = PBXFileReference; path = AudioPlayerDemoViewController.h; sourceTree = "<group>"; };
+		387A53E813612D6F00906A79 /* AudioPlayerDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioPlayerDemoViewController.h; sourceTree = "<group>"; };
 		387A53E913612D6F00906A79 /* AudioPlayerDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerDemoViewController.m; sourceTree = "<group>"; };
 		387A53EC13612D6F00906A79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AudioPlayerDemoViewController.xib; sourceTree = "<group>"; };
 		387A53F313612D7000906A79 /* AudioPlayerDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioPlayerDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		387A53FB13612D7000906A79 /* AudioPlayerDemoTests-Info.plist */ = {isa = PBXFileReference; path = "AudioPlayerDemoTests-Info.plist"; sourceTree = "<group>"; };
+		387A53FB13612D7000906A79 /* AudioPlayerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioPlayerDemoTests-Info.plist"; sourceTree = "<group>"; };
 		387A53FD13612D7000906A79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		387A53FF13612D7000906A79 /* AudioPlayerDemoTests-Prefix.pch */ = {isa = PBXFileReference; path = "AudioPlayerDemoTests-Prefix.pch"; sourceTree = "<group>"; };
+		387A53FF13612D7000906A79 /* AudioPlayerDemoTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioPlayerDemoTests-Prefix.pch"; sourceTree = "<group>"; };
 		387A540013612D7000906A79 /* AudioPlayerDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioPlayerDemoTests.h; sourceTree = "<group>"; };
 		387A540213612D7000906A79 /* AudioPlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerDemoTests.m; sourceTree = "<group>"; };
+		387A541513612DB400906A79 /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		387A541613612DB400906A79 /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
+		387A54181361316200906A79 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		387A541A1361367A00906A79 /* SoundBar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SoundBar.wav; sourceTree = "<group>"; };
+		387A541B1361367A00906A79 /* SoundFoo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SoundFoo.wav; sourceTree = "<group>"; };
+		387A541E1361368D00906A79 /* MusicBack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MusicBack.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				387A54191361316200906A79 /* AVFoundation.framework in Frameworks */,
 				387A53D413612D6F00906A79 /* UIKit.framework in Frameworks */,
 				387A53D613612D6F00906A79 /* Foundation.framework in Frameworks */,
 				387A53D813612D6F00906A79 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +96,7 @@
 		387A53C413612D6F00906A79 = {
 			isa = PBXGroup;
 			children = (
+				387A54181361316200906A79 /* AVFoundation.framework */,
 				387A53D913612D6F00906A79 /* AudioPlayerDemo */,
 				387A53F913612D7000906A79 /* AudioPlayerDemoTests */,
 				387A53D213612D6F00906A79 /* Frameworks */,
@@ -113,6 +126,8 @@
 		387A53D913612D6F00906A79 /* AudioPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				387A54201361369000906A79 /* Resources */,
+				387A541413612D9A00906A79 /* Utils */,
 				387A53E213612D6F00906A79 /* AudioPlayerDemoAppDelegate.h */,
 				387A53E313612D6F00906A79 /* AudioPlayerDemoAppDelegate.m */,
 				387A53E513612D6F00906A79 /* MainWindow.xib */,
@@ -153,6 +168,25 @@
 				387A53FF13612D7000906A79 /* AudioPlayerDemoTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		387A541413612D9A00906A79 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				387A541513612DB400906A79 /* AudioPlayer.h */,
+				387A541613612DB400906A79 /* AudioPlayer.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		387A54201361369000906A79 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				387A541E1361368D00906A79 /* MusicBack.mp3 */,
+				387A541A1361367A00906A79 /* SoundBar.wav */,
+				387A541B1361367A00906A79 /* SoundFoo.wav */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +262,9 @@
 				387A53DE13612D6F00906A79 /* InfoPlist.strings in Resources */,
 				387A53E713612D6F00906A79 /* MainWindow.xib in Resources */,
 				387A53ED13612D6F00906A79 /* AudioPlayerDemoViewController.xib in Resources */,
+				387A541C1361367A00906A79 /* SoundBar.wav in Resources */,
+				387A541D1361367A00906A79 /* SoundFoo.wav in Resources */,
+				387A541F1361368D00906A79 /* MusicBack.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +303,7 @@
 				387A53E113612D6F00906A79 /* main.m in Sources */,
 				387A53E413612D6F00906A79 /* AudioPlayerDemoAppDelegate.m in Sources */,
 				387A53EA13612D6F00906A79 /* AudioPlayerDemoViewController.m in Sources */,
+				387A541713612DB400906A79 /* AudioPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

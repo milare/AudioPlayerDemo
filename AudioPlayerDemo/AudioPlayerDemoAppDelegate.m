@@ -7,7 +7,6 @@
 //
 
 #import "AudioPlayerDemoAppDelegate.h"
-
 #import "AudioPlayerDemoViewController.h"
 
 @implementation AudioPlayerDemoAppDelegate
@@ -22,6 +21,7 @@
     // Override point for customization after application launch.
      
     self.window.rootViewController = self.viewController;
+    self.viewController.audioPlayer = [[AudioPlayer alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }

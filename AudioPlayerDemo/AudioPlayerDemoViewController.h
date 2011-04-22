@@ -7,9 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AudioPlayer.h"
 
 @interface AudioPlayerDemoViewController : UIViewController {
-    
+  AudioPlayer* audioPlayer;  
 }
+
+@property (retain, nonatomic) AudioPlayer *audioPlayer;
+
+- (IBAction) playFoo;
+- (IBAction) playBar;
+- (IBAction) playBack;
+- (IBAction) stopFoo;
+- (IBAction) stopBar;
+- (IBAction) stopBack;
+- (IBAction) stopSounds;
+- (IBAction) stopAll;
 
 @end

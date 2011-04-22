@@ -10,8 +10,54 @@
 
 @implementation AudioPlayerDemoViewController
 
+@synthesize audioPlayer;
+
+
+- (IBAction) playFoo
+{ 
+    [audioPlayer playFile:@"SoundFoo" ofType:@"wav" nTimes:-1]; 
+}
+
+- (IBAction) playBar
+{ 
+    [audioPlayer playFile:@"SoundBar" ofType:@"wav" nTimes:-1]; 
+}
+
+- (IBAction) playBack
+{
+    [audioPlayer playFile:@"MusicBack" ofType:@"mp3" nTimes:-1];
+}
+
+- (IBAction) stopFoo
+{
+    [audioPlayer stopPlayingFile:@"SoundFoo"];
+}
+
+- (IBAction) stopBar
+{
+    [audioPlayer stopPlayingFile:@"SoundBar"];
+}
+
+- (IBAction) stopBack
+{
+    [audioPlayer stopPlayingFile:@"MusicBack"];
+}
+
+- (IBAction) stopSounds
+{
+    [audioPlayer stopPlayingFilesLike:@"Sound"];
+}
+
+- (IBAction) stopAll
+{
+    [audioPlayer muteAll];
+    
+}
+
+
 - (void)dealloc
 {
+    [audioPlayer release];
     [super dealloc];
 }
 
